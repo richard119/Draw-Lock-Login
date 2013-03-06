@@ -21,6 +21,7 @@
 @synthesize paths = _paths;
 @synthesize tipsLoginLabel = _tipsLoginLabel;
 @synthesize key = _key;
+@synthesize msgUser;
 
 - (void)viewDidLoad
 {
@@ -43,6 +44,10 @@
     if (self.key == nil) {
         self.key = [[NSMutableString alloc] init];
     }
+    
+    NSString *tipText = @"Please set password for user ";
+    tipText = [tipText stringByAppendingString:msgUser];
+    self.tipsLoginLabel.text =  tipText;
    
 }
 
@@ -112,7 +117,7 @@
     dataKey = [ud dataForKey:@"oh my password key"];
     
     if (FIRST) {
-        self.tipsLoginLabel.text = @"Please agein password";
+        self.tipsLoginLabel.text = @"Please again password";
         for (NSNumber *tag in _paths) {
             [self.key appendFormat:@"%02d", tag.integerValue];
         }

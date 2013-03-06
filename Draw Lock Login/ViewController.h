@@ -19,6 +19,8 @@
 
 @property (nonatomic, strong) NSMutableString *key;
 
+@property (strong, atomic) NSString *msgUser;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *tipsLoginLabel;
 

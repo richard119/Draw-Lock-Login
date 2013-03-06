@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D9294DF16E798F000B4BB7E /* copy_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9294DE16E798F000B4BB7E /* copy_small.png */; };
 		C95FDA011518BE920056BD4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA001518BE920056BD4A /* UIKit.framework */; };
 		C95FDA031518BE920056BD4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA021518BE920056BD4A /* Foundation.framework */; };
 		C95FDA051518BE920056BD4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA041518BE920056BD4A /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D9294DE16E798F000B4BB7E /* copy_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy_small.png; sourceTree = "<group>"; };
 		C95FD9FC1518BE920056BD4A /* Draw Lock Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Draw Lock Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95FDA001518BE920056BD4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C95FDA021518BE920056BD4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 		C95FD9F11518BE920056BD4A = {
 			isa = PBXGroup;
 			children = (
+				5D9294DE16E798F000B4BB7E /* copy_small.png */,
 				C95FDA061518BE920056BD4A /* Draw Lock Login */,
 				C95FD9FF1518BE920056BD4A /* Frameworks */,
 				C95FD9FD1518BE920056BD4A /* Products */,
@@ -191,6 +194,7 @@
 				C95FDA141518BE920056BD4A /* MainStoryboard.storyboard in Resources */,
 				C95FDA261518D9D20056BD4A /* dot_off.png in Resources */,
 				C95FDA271518D9D20056BD4A /* dot_on.png in Resources */,
+				5D9294DF16E798F000B4BB7E /* copy_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

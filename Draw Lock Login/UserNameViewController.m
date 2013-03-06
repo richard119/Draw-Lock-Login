@@ -37,7 +37,6 @@
     
 	// Do any additional setup after loading the view.
     
-    
 
 }
 
@@ -101,8 +100,31 @@
      */
     
     //[self performSegueWithIdentifier:@"Input User Name and go to Lock View" sender:self];
-     
+    
+    
+//加密解密
+    NSString *key = @"a16byteslongkey!a16byteslongkey!";
+    NSString *plaintext = @"iphone";
+    NSString *ciphertext = [plaintext AES256EncryptWithKey: key];
+    NSLog(@"ciphertext: %@", ciphertext);
+    plaintext = [ciphertext AES256DecryptWithKey: key];
+    NSLog(@"plaintext: %@", plaintext);
+    
+    
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"Input User Name and go to Lock View"]) {
+        if (self.user == nil) {
+           [[segue destinationViewController] setMsgUser:self.userName.text];
+        }
+        else{
+            [[segue destinationViewController] setMsgUser:self.user];
+        }
+    }
+}
+
 
 // 完成关闭键盘
 - (IBAction)textFieldDoneEditing:(id)sender {
