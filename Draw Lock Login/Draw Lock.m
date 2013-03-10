@@ -18,7 +18,8 @@
 
 -(void)setup
 {
-    self.backgroundColor = [UIColor darkGrayColor];
+//    self.backgroundColor = [UIColor darkGrayColor];
+    self.backgroundColor = [UIColor colorWithRed:65/255.0 green:57/255.0 blue:54/255.0 alpha:1];
     [self setSubviewImageButton];
 }
 
@@ -94,9 +95,9 @@
     // 初始subview
     for (int i = 0; i < MATRIX_SIZE; i++) {
         for (int j = 0; j < MATRIX_SIZE; j++) {
-            UIImage *dotImage = [UIImage imageNamed:@"dot_off.png"];
+            UIImage *dotImage = [UIImage imageNamed:@"on_1.png"];
             UIImageView *imageView = [[UIImageView alloc] initWithImage:dotImage
-                                                       highlightedImage:[UIImage imageNamed:@"dot_on.png"]];
+                                                       highlightedImage:[UIImage imageNamed:@"off_1.png"]];
             imageView.frame = CGRectMake(0, 0, dotImage.size.width, dotImage.size.height);
             imageView.userInteractionEnabled = YES;
             imageView.tag = j * MATRIX_SIZE + i + 1;
@@ -128,7 +129,8 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 10.0);
     CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
-    CGFloat components[] = {0.5, 0.5, 0.5, 0.8};
+//  CGFloat components[] = {0.5, 0.5, 0.5, 0.8};
+    CGFloat components[] = {1, 0.57, 0.07, 1};
     CGColorRef color = CGColorCreate(colorspace, components);
     CGContextSetStrokeColorWithColor(context, color);
     

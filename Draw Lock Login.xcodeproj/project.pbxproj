@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5D9294DF16E798F000B4BB7E /* copy_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9294DE16E798F000B4BB7E /* copy_small.png */; };
+		5DC74CB016EC318100E236C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC74CAF16EC318100E236C3 /* Default-568h@2x.png */; };
+		5DC74CB716EC471800E236C3 /* off_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC74CB516EC471800E236C3 /* off_1.png */; };
+		5DC74CB816EC471800E236C3 /* on_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC74CB616EC471800E236C3 /* on_1.png */; };
 		C95FDA011518BE920056BD4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA001518BE920056BD4A /* UIKit.framework */; };
 		C95FDA031518BE920056BD4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA021518BE920056BD4A /* Foundation.framework */; };
 		C95FDA051518BE920056BD4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95FDA041518BE920056BD4A /* CoreGraphics.framework */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		5D9294DE16E798F000B4BB7E /* copy_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy_small.png; sourceTree = "<group>"; };
+		5DC74CAF16EC318100E236C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5DC74CB516EC471800E236C3 /* off_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off_1.png; sourceTree = "<group>"; };
+		5DC74CB616EC471800E236C3 /* on_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on_1.png; sourceTree = "<group>"; };
 		C95FD9FC1518BE920056BD4A /* Draw Lock Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Draw Lock Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95FDA001518BE920056BD4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C95FDA021518BE920056BD4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +77,7 @@
 		C95FD9F11518BE920056BD4A = {
 			isa = PBXGroup;
 			children = (
+				5DC74CAF16EC318100E236C3 /* Default-568h@2x.png */,
 				5D9294DE16E798F000B4BB7E /* copy_small.png */,
 				C95FDA061518BE920056BD4A /* Draw Lock Login */,
 				C95FD9FF1518BE920056BD4A /* Frameworks */,
@@ -134,6 +141,8 @@
 		C95FDA281518D9D90056BD4A /* image */ = {
 			isa = PBXGroup;
 			children = (
+				5DC74CB516EC471800E236C3 /* off_1.png */,
+				5DC74CB616EC471800E236C3 /* on_1.png */,
 				C95FDA241518D9D20056BD4A /* dot_off.png */,
 				C95FDA251518D9D20056BD4A /* dot_on.png */,
 			);
@@ -166,7 +175,7 @@
 		C95FD9F31518BE920056BD4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = C95FD9F61518BE920056BD4A /* Build configuration list for PBXProject "Draw Lock Login" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,6 +204,9 @@
 				C95FDA261518D9D20056BD4A /* dot_off.png in Resources */,
 				C95FDA271518D9D20056BD4A /* dot_on.png in Resources */,
 				5D9294DF16E798F000B4BB7E /* copy_small.png in Resources */,
+				5DC74CB016EC318100E236C3 /* Default-568h@2x.png in Resources */,
+				5DC74CB716EC471800E236C3 /* off_1.png in Resources */,
+				5DC74CB816EC471800E236C3 /* on_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +256,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -269,6 +285,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
