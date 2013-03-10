@@ -131,13 +131,15 @@
         }
         if ([self.key isEqualToString:secondKey]) {
             self.tipsLoginLabel.text = @"OK";
+            [self performSegueWithIdentifier:@"Password is right go to account Information" sender:self];
         }
         else {
+            NSLog(@"first:%@",self.key);
+            NSLog(@"second:%@",secondKey);
+            self.tipsLoginLabel.text = @"No Match, Please try again!";
             FIRST = YES;
-        }
-        NSLog(@"second:%@",secondKey);
-        [self performSegueWithIdentifier:@"Password is right go to account Information" sender:self];
-        
+            [self setKey: [NSMutableString stringWithString:@""]];
+        }    
     }
     else {
         NSLog(@"%@", dataKey);
